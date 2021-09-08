@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 17:04:41 by marvin            #+#    #+#             */
-/*   Updated: 2021/09/07 19:12:07 by marvin           ###   ########.fr       */
+/*   Updated: 2021/09/08 13:51:56 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	signal_handler(int signum)
 
 	if (signum == SIGUSR1 && flag)
 	{
-		ft_putstr_fd("\nMessage sent ", 1);
+		ft_putstr_fd("\nNew phone who dis? \n\n", 1);
 		flag = 0;
 	}
 	if (signum == SIGUSR2)
 	{
-		ft_putstr_fd("-> Message recieved \n", 1);
+		ft_putstr_fd("It's ya boy skinny BEENIS \n", 1);
 		flag = 1;
 		exit(EXIT_SUCCESS);
 	}
